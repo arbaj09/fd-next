@@ -49,7 +49,7 @@
 }
 
 .text-color {
-  color: #007bff;
+  color: rgba(15,172,133,var(--tw-text-opacity));;
 }
 
 /* Styles for select dropdowns */

@@ -51,17 +51,17 @@ const Investment = () => {
     if(Value.TwoOption==='AsLumpsum'){  
       
       if (Value.option === "Quarterly") {
-        periodsPer = 4;
+        periodsPerYear = 4;
       } else if (Value.option === "Half yearly") {
-        periodsPer = 2;
+        periodsPerYear = 2;
       } else if (Value.option === "Yearly") {
-        periodsPer = 1;
+        periodsPerYear = 1;
       }
 
-      const na = periodsPer * duration;
+      const na = periodsPerYear * duration;
       const ra = parseFloat(Value.Interest) / 100;
-      const Ma = principal * Math.pow(1 + r, n);
-      setLumpsum(M.toFixed())
+      const Ma = principal * Math.pow(1 + ra, na);
+      setLumpsum(Ma.toFixed())
 
  
     }
